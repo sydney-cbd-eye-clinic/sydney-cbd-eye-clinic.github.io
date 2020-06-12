@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1149" height="495" viewBox="0 0 1149 495">
+  <defs>
+    <filter id="Rectangle_19" x="0" y="44" width="1149" height="400" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="18" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="19.5" result="blur"/>
+      <feFlood flood-opacity="0.071"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_18" x="45" y="0" width="1062" height="495" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="18" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="19.5" result="blur-2"/>
+      <feFlood flood-opacity="0.071"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="bg" transform="translate(-381.5 -5211.5)">
+    <g transform="matrix(1, 0, 0, 1, 381.5, 5211.5)" filter="url(#Rectangle_19)">
+      <rect id="Rectangle_19-2" data-name="Rectangle 19" width="1032" height="283" rx="6" transform="translate(56.5 84.5)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 381.5, 5211.5)" filter="url(#Rectangle_18)">
+      <rect id="Rectangle_18-2" data-name="Rectangle 18" width="945" height="378" rx="6" transform="translate(101.5 40.5)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
