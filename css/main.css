@@ -911,21 +911,29 @@ body {
 .testimonials .testimonials-row .testimonial-item.item1 {
   background: url("../images/t1.png") no-repeat;
   background-size: cover;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 .testimonials .testimonials-row .testimonial-item.item2 {
   background: url("../images/t2.png") no-repeat;
   background-size: cover;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 .testimonials .testimonials-row .testimonial-item.item3 {
   background: url("../images/t3.png") no-repeat;
   background-size: cover;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 .testimonials .testimonials-row .testimonial-item.item4 {
   background: url("../images/t4.png") no-repeat;
   background-size: cover;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 
 .testimonials h4 {

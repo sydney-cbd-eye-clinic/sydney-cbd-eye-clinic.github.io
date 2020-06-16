@@ -700,18 +700,22 @@ $dark-blue: #015bea;
       &.item1 {
         background: url("../images/t1.png") no-repeat;
         background-size: cover;
+        animation-delay: 0s;
       }
       &.item2 {
         background: url("../images/t2.png") no-repeat;
         background-size: cover;
+        animation-delay: 0.2s;
       }
       &.item3 {
         background: url("../images/t3.png") no-repeat;
         background-size: cover;
+        animation-delay: 0.4s;
       }
       &.item4 {
         background: url("../images/t4.png") no-repeat;
         background-size: cover;
+        animation-delay: 0.6s;
       }
     }
   }
