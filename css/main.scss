@@ -189,6 +189,7 @@ $dark-blue: #015bea;
     height: 100%;
     z-index: 5;
     background-size: cover;
+    animation: 2s fadeIn 0s forwards;
   }
   &:after {
     content: " ";
@@ -276,6 +277,7 @@ $dark-blue: #015bea;
   }
   h1 {
     font: bold 60px/76px $font-bold;
+    animation-delay: 0.5s;
     letter-spacing: -1.6px;
     @include mobile {
       font: bold 32px/46px $font-bold;
@@ -285,14 +287,15 @@ $dark-blue: #015bea;
   h3 {
     font: 400 26px/46px $font-semibold;
     margin-top: 30px;
+    animation-delay: 0.7s;
     @include mobile {
       font: 400 20px/36px $font-semibold;
       margin-top: 10px;
     }
   }
   .hero-cta-book {
-    background: transparent linear-gradient(79deg, #242424 0%, #787878 100%) 0%
-      0% no-repeat padding-box;
+    animation-delay: 0.9s;
+    background: #242424;
     border-radius: 6px;
     text-align: center;
     font: 400 22px/28px $font-regular;
@@ -312,7 +315,7 @@ $dark-blue: #015bea;
 }
 
 .about {
-  background: url("../images/conditions-bg.jpg") no-repeat;
+  background: url("../images/conditions-bg-min.jpg") no-repeat;
   background-size: cover;
   padding-bottom: 200px;
   @include mobile {
@@ -395,8 +398,27 @@ $dark-blue: #015bea;
         margin-bottom: 30px;
       }
     }
+    .row {
+      &.animate__animated {
+        .condition-item {
+          $elements: 9;
+          @for $i from 0 to $elements {
+            &:nth-child(#{$i + 1}) {
+              opacity: 0;
+              animation: 1s fadeIn $i * 200ms forwards;
+            }
+          }
+        }
+      }
+    }
     .condition-item {
       margin-bottom: 40px;
+      border-left: 4px solid transparent;
+
+      &:hover {
+        border-left: 4px solid $light-blue;
+        transition: all 0.5s;
+      }
       h3 {
         text-align: left;
         font: 400 28px/40px $font-semibold;

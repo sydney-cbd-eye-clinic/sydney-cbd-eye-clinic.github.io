@@ -3,7 +3,45 @@ $(document).ready(function () {
   let centerSlide = Math.ceil(sliderItems / 2);
   let activeSlide = centerSlide;
   let isMobile = $(window).innerWidth() > 768;
+  wow = new WOW({
+    boxClass: "wow", // default
+    animateClass: "animate__animated", // default
+    offset: $(window).innerHeight() * 0.3, // default
+    mobile: true, // default
+    live: true, // default
+  });
+  wow.init();
 
+  // $.each($(".conditions-treated .condition-item"), function (i) {
+  //   $(this).hover(
+  //     function () {
+  //       console.log(i);
+  //       $(this).css({
+  //         opacity: "0.6 !important",
+  //       });
+  //     },
+  //     function () {
+  //       // $(".conditions-treated .condition-item").css({ opacity: "1" });
+  //     }
+  //   );
+  // });
+
+  $(".conditions-treated .condition-item").hover(
+    function () {
+      $(
+        ".conditions-treated .condition-item h3,.conditions-treated .condition-item p"
+      )
+        .stop()
+        .animate({ opacity: "0.5" }, 300);
+      $(this).find("h3").stop().css({ opacity: "1" });
+      $(this).find("p").stop().css({ opacity: "1" });
+    },
+    function () {
+      $(
+        ".conditions-treated .condition-item h3,.conditions-treated .condition-item p"
+      ).animate({ opacity: "1" }, 300);
+    }
+  );
   if (isMobile) {
     $(".doctors-slider .slider-item")
       .eq(activeSlide - 1)
@@ -11,7 +49,7 @@ $(document).ready(function () {
 
     $.each($(".doctors-slider .slider-item"), function (index) {
       let offset = index - centerSlide + 1;
-      console.log(offset);
+      // console.log(offset);
       if (offset < 0) {
         $(this).css({
           transform: "translateX(-100px) scale(0.8)",

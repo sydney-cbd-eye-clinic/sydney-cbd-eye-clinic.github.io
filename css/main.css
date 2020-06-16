@@ -192,6 +192,8 @@ body {
   height: 100%;
   z-index: 5;
   background-size: cover;
+  -webkit-animation: 2s fadeIn 0s forwards;
+          animation: 2s fadeIn 0s forwards;
 }
 
 .atf:after {
@@ -290,6 +292,8 @@ body {
 
 .hero h1 {
   font: bold 60px/76px "Averta-Bold";
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
   letter-spacing: -1.6px;
 }
 
@@ -303,6 +307,8 @@ body {
 .hero h3 {
   font: 400 26px/46px "Averta-Semibold";
   margin-top: 30px;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
 }
 
 @media (max-width: 767px) {
@@ -313,7 +319,9 @@ body {
 }
 
 .hero .hero-cta-book {
-  background: transparent linear-gradient(79deg, #242424 0%, #787878 100%) 0% 0% no-repeat padding-box;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+  background: #242424;
   border-radius: 6px;
   text-align: center;
   font: 400 22px/28px "Averta-Regular";
@@ -335,7 +343,7 @@ body {
 }
 
 .about {
-  background: url("../images/conditions-bg.jpg") no-repeat;
+  background: url("../images/conditions-bg-min.jpg") no-repeat;
   background-size: cover;
   padding-bottom: 200px;
 }
@@ -448,8 +456,69 @@ body {
   }
 }
 
+.about .conditions-treated .row.animate__animated .condition-item:nth-child(1) {
+  opacity: 0;
+  -webkit-animation: 1s fadeIn 0ms forwards;
+          animation: 1s fadeIn 0ms forwards;
+}
+
+.about .conditions-treated .row.animate__animated .condition-item:nth-child(2) {
+  opacity: 0;
+  -webkit-animation: 1s fadeIn 200ms forwards;
+          animation: 1s fadeIn 200ms forwards;
+}
+
+.about .conditions-treated .row.animate__animated .condition-item:nth-child(3) {
+  opacity: 0;
+  -webkit-animation: 1s fadeIn 400ms forwards;
+          animation: 1s fadeIn 400ms forwards;
+}
+
+.about .conditions-treated .row.animate__animated .condition-item:nth-child(4) {
+  opacity: 0;
+  -webkit-animation: 1s fadeIn 600ms forwards;
+          animation: 1s fadeIn 600ms forwards;
+}
+
+.about .conditions-treated .row.animate__animated .condition-item:nth-child(5) {
+  opacity: 0;
+  -webkit-animation: 1s fadeIn 800ms forwards;
+          animation: 1s fadeIn 800ms forwards;
+}
+
+.about .conditions-treated .row.animate__animated .condition-item:nth-child(6) {
+  opacity: 0;
+  -webkit-animation: 1s fadeIn 1000ms forwards;
+          animation: 1s fadeIn 1000ms forwards;
+}
+
+.about .conditions-treated .row.animate__animated .condition-item:nth-child(7) {
+  opacity: 0;
+  -webkit-animation: 1s fadeIn 1200ms forwards;
+          animation: 1s fadeIn 1200ms forwards;
+}
+
+.about .conditions-treated .row.animate__animated .condition-item:nth-child(8) {
+  opacity: 0;
+  -webkit-animation: 1s fadeIn 1400ms forwards;
+          animation: 1s fadeIn 1400ms forwards;
+}
+
+.about .conditions-treated .row.animate__animated .condition-item:nth-child(9) {
+  opacity: 0;
+  -webkit-animation: 1s fadeIn 1600ms forwards;
+          animation: 1s fadeIn 1600ms forwards;
+}
+
 .about .conditions-treated .condition-item {
   margin-bottom: 40px;
+  border-left: 4px solid transparent;
+}
+
+.about .conditions-treated .condition-item:hover {
+  border-left: 4px solid #01c5f9;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .about .conditions-treated .condition-item h3 {
@@ -1060,7 +1129,7 @@ footer .nav-menu .nav-item .nav-link {
     margin-top: 1.56vw;
   }
   .hero .hero-cta-book {
-    background: transparent linear-gradient(79deg, #242424 0%, #787878 100%) 0% 0% no-repeat padding-box;
+    background: #242424;
     border-radius: 0.31vw;
     text-align: center;
     font: 400 1.15vw/1.46vw "Averta-Regular";
@@ -1073,7 +1142,6 @@ footer .nav-menu .nav-item .nav-link {
     display: inline-block;
   }
   .about {
-    background: url("../images/conditions-bg.jpg") no-repeat;
     background-size: cover;
     padding-bottom: 10.42vw;
   }

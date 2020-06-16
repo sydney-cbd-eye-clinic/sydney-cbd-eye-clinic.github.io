@@ -153,8 +153,7 @@
       margin-top: 1.56vw;
     }
     .hero-cta-book {
-      background: transparent linear-gradient(79deg, #242424 0%, #787878 100%)
-        0% 0% no-repeat padding-box;
+      background: #242424;
       border-radius: 0.31vw;
       text-align: center;
       font: 400 1.15vw/1.46vw $font-regular;
@@ -169,7 +168,6 @@
   }
 
   .about {
-    background: url("../images/conditions-bg.jpg") no-repeat;
     background-size: cover;
     padding-bottom: 10.42vw;
     .intro {
