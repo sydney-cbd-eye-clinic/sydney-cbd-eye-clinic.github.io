@@ -800,7 +800,7 @@ body {
 }
 
 .doctors-slider .slider-item .doctor-info h3 {
-  font: Bold 38px/50px "Averta-Bold";
+  font: Bold 32px/46px "Averta-Bold";
   color: #01c5f9;
   letter-spacing: -2px;
   margin-bottom: 10px;
@@ -808,19 +808,19 @@ body {
 
 @media (max-width: 767px) {
   .doctors-slider .slider-item .doctor-info h3 {
-    font: Bold 28px/38px "Averta-Bold";
+    font: Bold 24px/32px "Averta-Bold";
   }
 }
 
 .doctors-slider .slider-item .doctor-info p {
-  font: 400 20px/32px "Lato";
+  font: 400 18px/28px "Lato";
   color: #242424;
   margin-bottom: 0;
 }
 
 @media (max-width: 767px) {
   .doctors-slider .slider-item .doctor-info p {
-    font: 400 18px/32px "Lato";
+    font: 400 18px/28px "Lato";
   }
 }
 
@@ -1333,13 +1333,13 @@ footer .nav-menu .nav-item .nav-link {
     border-radius: 0.42vw;
   }
   .doctors-slider .slider-item .doctor-info h3 {
-    font: Bold 1.98vw/2.6vw "Averta-Bold";
+    font: Bold 1.6vw/2.4vw "Averta-Bold";
     color: #01c5f9;
     letter-spacing: -0.1vw;
     margin-bottom: 0.52vw;
   }
   .doctors-slider .slider-item .doctor-info p {
-    font: 400 1.04vw/1.67vw "Lato";
+    font: 400 0.9vw/1.4vw "Lato";
     color: #242424;
   }
   .doctors-slider .slider-item .doctor-info a {

@@ -620,20 +620,20 @@ $dark-blue: #015bea;
 
     .doctor-info {
       h3 {
-        font: Bold 38px/50px $font-bold;
+        font: Bold 32px/46px $font-bold;
         color: $light-blue;
         letter-spacing: -2px;
         margin-bottom: 10px;
         @include mobile {
-          font: Bold 28px/38px $font-bold;
+          font: Bold 24px/32px $font-bold;
         }
       }
       p {
-        font: 400 20px/32px "Lato";
+        font: 400 18px/28px "Lato";
         color: #242424;
         margin-bottom: 0;
         @include mobile {
-          font: 400 18px/32px "Lato";
+          font: 400 18px/28px "Lato";
         }
       }
       a {
