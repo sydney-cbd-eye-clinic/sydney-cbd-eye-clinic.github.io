@@ -127,7 +127,6 @@ $dark-blue: #015bea;
       }
       &:hover {
         border-bottom: 3px solid #ccc;
-
         color: $light-blue;
         @include tablet {
           border: none;
@@ -774,4 +773,33 @@ footer {
     }
   }
 }
+.heading-underline {
+  font: 400 26px/58px $font-semibold;
+  color: #787878;
+  text-transform: uppercase;
+  border-bottom: 3px solid $light-blue;
+  padding-bottom: 10px;
+  @media (min-width: 992px) and (max-width: 1919px) {
+    font: 400 1.35vw/3.02vw $font-semibold;
+    color: #787878;
+    text-transform: uppercase;
+    border-bottom: 0.16vw solid $light-blue;
+    padding-bottom: 0.52vw;
+  }
+}
+.sec-heading {
+  font: Bold 48px/60px $font-bold;
+  display: inline-block;
+  letter-spacing: -2px;
+  @media (min-width: 992px) and (max-width: 1919px) {
+    font: Bold 2.5vw/3.13vw $font-bold;
+    display: inline-block;
+    letter-spacing: -0.1vw;
+  }
+  @include mobile {
+    font: Bold 36px/48px $font-bold;
+  }
+}
+@import "about";
+
 @import "responsive";

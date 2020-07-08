@@ -996,6 +996,619 @@ footer .nav-menu .nav-item .nav-link {
   padding: 5px 0;
 }
 
+.heading-underline {
+  font: 400 26px/58px "Averta-Semibold";
+  color: #787878;
+  text-transform: uppercase;
+  border-bottom: 3px solid #01c5f9;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 992px) and (max-width: 1919px) {
+  .heading-underline {
+    font: 400 1.35vw/3.02vw "Averta-Semibold";
+    color: #787878;
+    text-transform: uppercase;
+    border-bottom: 0.16vw solid #01c5f9;
+    padding-bottom: 0.52vw;
+  }
+}
+
+.sec-heading {
+  font: Bold 48px/60px "Averta-Bold";
+  display: inline-block;
+  letter-spacing: -2px;
+}
+
+@media (min-width: 992px) and (max-width: 1919px) {
+  .sec-heading {
+    font: Bold 2.5vw/3.13vw "Averta-Bold";
+    display: inline-block;
+    letter-spacing: -0.1vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .sec-heading {
+    font: Bold 36px/48px "Averta-Bold";
+  }
+}
+
+.about-us-atf {
+  min-height: unset !important;
+  padding-top: 260px;
+  padding-bottom: 160px;
+}
+
+@media (max-width: 991px) {
+  .about-us-atf {
+    padding-top: 150px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-us-atf {
+    padding-bottom: 50px;
+  }
+}
+
+.about-us-atf .hero {
+  padding-top: 0;
+}
+
+.about-us-atf:before {
+  background: url("../images/about-atf.jpg") no-repeat !important;
+  background-size: cover !important;
+}
+
+.about-us-atf h1 {
+  margin: 40px 0 10px;
+}
+
+.about-us-atf .about-header-about {
+  font: 400 20px/40px "Lato";
+}
+
+@media (max-width: 767px) {
+  .about-us-atf .about-header-about {
+    font: 400 18px/34px "Lato";
+  }
+}
+
+.about-us-atf .about-atf-img img {
+  width: 50%;
+}
+
+.about-us-atf .about-atf-img img:nth-child(1) {
+  position: relative;
+  top: -50px;
+  right: -50px;
+}
+
+.meet-surgeons {
+  padding: 100px 0 125px;
+  background: url("../images/dots-pattern.svg") no-repeat;
+  background-position: right bottom;
+  background-size: 100%;
+}
+
+@media (max-width: 991px) {
+  .meet-surgeons {
+    padding: 50px 0 70px;
+  }
+}
+
+@media (max-width: 767px) {
+  .meet-surgeons {
+    padding: 50px 0 30px;
+  }
+}
+
+.meet-surgeons h2 {
+  margin-bottom: 75px;
+}
+
+@media (max-width: 767px) {
+  .meet-surgeons h2 {
+    margin-bottom: 30px;
+  }
+}
+
+.meet-surgeons .doctor-item .doctor-avatar {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.meet-surgeons .doctor-item .doctor-avatar img {
+  width: 100%;
+}
+
+.meet-surgeons .doctor-item h3 {
+  font: 400 30px/38px "Averta-Bold";
+  color: #01c5f9;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin-bottom: 25px;
+}
+
+.meet-surgeons .doctor-item h5 {
+  font: 400 22px/28px "Averta-Regular";
+  color: #787878;
+  margin: 15px 0 25px;
+}
+
+.meet-surgeons .doctor-item .cbd-btn-primary {
+  font-size: 16px;
+  min-width: 180px;
+  padding: 15px 25px;
+  font-family: "Averta-Semibold";
+}
+
+.doctor-bio-modal {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.doctor-bio-modal .modal-dialog {
+  position: absolute;
+  right: 20px;
+  top: -20px;
+  padding: 20px;
+  pointer-events: all;
+}
+
+@media (max-width: 767px) {
+  .doctor-bio-modal .modal-dialog {
+    top: 0;
+    right: 0;
+  }
+}
+
+.doctor-bio-modal .modal-wrapper {
+  background: #fff;
+  border-radius: 8px;
+  width: 1200px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-box-shadow: 2px 18px 39px #00000012;
+          box-shadow: 2px 18px 39px #00000012;
+  margin: auto;
+  top: 80px;
+  height: calc(100vh - 160px);
+}
+
+@media (max-width: 991px) {
+  .doctor-bio-modal .modal-wrapper {
+    max-width: calc(100% - 50px);
+    top: 25px;
+    overflow: scroll;
+    height: calc(100vh - 50px);
+  }
+}
+
+.doctor-bio-modal .modal-wrapper .doctor-bio {
+  overflow-y: scroll;
+  padding: 60px 120px 60px 185px;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .doctor-bio-modal .modal-wrapper .doctor-bio {
+    padding: 50px;
+    overflow: visible;
+  }
+}
+
+@media (max-width: 767px) {
+  .doctor-bio-modal .modal-wrapper .doctor-bio {
+    padding: 25px;
+  }
+}
+
+.doctor-bio-modal .modal-wrapper .doctor-bio h3 {
+  font: 400 36px/46px "Averta-Bold";
+  color: #01c5f9;
+  text-transform: uppercase;
+}
+
+.doctor-bio-modal .modal-wrapper .doctor-bio p {
+  font-size: 18px;
+  line-height: 35px;
+  margin-bottom: 5px;
+}
+
+.doctor-bio-modal .modal-wrapper .doctor-bio hr {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.doctor-bio-modal .modal-wrapper .doctor-avatar {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 25px;
+  position: absolute;
+  left: -135px;
+  top: 60px;
+}
+
+.doctor-bio-modal .modal-wrapper .doctor-avatar img {
+  width: 270px;
+}
+
+@media (max-width: 767px) {
+  .doctor-bio-modal .modal-wrapper .doctor-avatar img {
+    width: calc(100% - 50px);
+  }
+}
+
+@media (max-width: 991px) {
+  .doctor-bio-modal .modal-wrapper .doctor-avatar {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    margin-bottom: 50px;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 767px) {
+  .doctor-bio-modal .modal-wrapper .doctor-avatar {
+    width: calc(100% - 50px);
+    top: 80px;
+    left: 25px;
+    margin-bottom: 80px;
+  }
+  .doctor-bio-modal .modal-wrapper .doctor-avatar img {
+    width: 100%;
+  }
+}
+
+.about-testimonials {
+  padding: 100px 0 100px;
+  background: #fff;
+}
+
+@media (max-width: 991px) {
+  .about-testimonials {
+    padding: 80px 0;
+  }
+}
+
+.about-testimonials h2 {
+  margin-bottom: 20px;
+}
+
+.about-testimonials .testimonials-carousel {
+  position: relative;
+}
+
+.about-testimonials .testimonials-carousel .owl-prev {
+  position: absolute;
+  top: 220px;
+  left: -90px;
+  outline: 0;
+}
+
+@media (max-width: 991px) {
+  .about-testimonials .testimonials-carousel .owl-prev {
+    display: none;
+  }
+}
+
+.about-testimonials .testimonials-carousel .owl-next {
+  position: absolute;
+  top: 220px;
+  right: -90px;
+  outline: 0;
+}
+
+@media (max-width: 991px) {
+  .about-testimonials .testimonials-carousel .owl-next {
+    display: none;
+  }
+}
+
+.about-testimonials .testimonials-carousel .owl-stage-outer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.about-testimonials .testimonials-carousel .item {
+  padding: 50px 90px 30px 90px;
+  border: 2px solid #01c5f9;
+  font-size: 20px;
+  line-height: 36px;
+  position: relative;
+  overflow: visible;
+}
+
+@media (max-width: 767px) {
+  .about-testimonials .testimonials-carousel .item {
+    padding: 50px 25px 50px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+.about-testimonials .testimonials-carousel .item iframe {
+  max-width: 100%;
+}
+
+.about-testimonials .testimonials-carousel .item:before {
+  content: " ";
+  width: 153px;
+  height: 131px;
+  background: url("../images/quote-left.svg") no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  z-index: 50;
+}
+
+@media (max-width: 767px) {
+  .about-testimonials .testimonials-carousel .item:before {
+    width: 103px;
+    height: 91px;
+    top: -30px;
+    left: -30px;
+  }
+}
+
+.about-testimonials .testimonials-carousel .item:after {
+  content: " ";
+  width: 153px;
+  height: 131px;
+  background: url("../images/quote-right.svg") no-repeat;
+  background-size: 100%;
+  position: absolute;
+  bottom: -40px;
+  right: -40px;
+  z-index: 50;
+}
+
+@media (max-width: 767px) {
+  .about-testimonials .testimonials-carousel .item:after {
+    width: 103px;
+    height: 91px;
+    bottom: -30px;
+    right: -30px;
+  }
+}
+
+.about-testimonials .testimonials-carousel .item h3 {
+  font-size: 20px;
+  line-height: 40px;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .about-testimonials .testimonials-carousel .item h3 {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+.about-affiliations {
+  padding: 100px 0;
+}
+
+@media (max-width: 991px) {
+  .about-affiliations {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-affiliations {
+    padding: 40px 0;
+  }
+}
+
+.about-affiliations h2 {
+  margin-bottom: 50px;
+}
+
+.about-affiliations img {
+  max-width: 100%;
+  width: auto;
+  height: 100px;
+}
+
+@media (min-width: 992px) and (max-width: 1919px) {
+  .about-us-atf {
+    min-height: unset !important;
+    padding-top: 13.54vw;
+    padding-bottom: 8.33vw;
+  }
+  .about-us-atf .hero {
+    padding-top: 0;
+  }
+  .about-us-atf:before {
+    background: url("../images/about-atf.jpg") no-repeat !important;
+    background-size: cover !important;
+  }
+  .about-us-atf h1 {
+    margin: 2.08vw 0 0.52vw;
+  }
+  .about-us-atf .about-header-about {
+    font: 400 1.04vw/2.08vw "Lato";
+  }
+  .about-us-atf .about-atf-img img {
+    width: 50%;
+  }
+  .about-us-atf .about-atf-img img:nth-child(1) {
+    position: relative;
+    top: -2.6vw;
+    right: -2.6vw;
+  }
+  .meet-surgeons {
+    padding: 5.21vw 0 6.51vw;
+    background: url("../images/dots-pattern.svg") no-repeat;
+    background-position: right bottom;
+    background-size: 100%;
+  }
+  .meet-surgeons h2 {
+    margin-bottom: 3.91vw;
+  }
+  .meet-surgeons .doctor-item .doctor-avatar {
+    border-radius: 0.42vw;
+    overflow: hidden;
+    margin-bottom: 1.3vw;
+  }
+  .meet-surgeons .doctor-item .doctor-avatar img {
+    width: 100%;
+  }
+  .meet-surgeons .doctor-item h3 {
+    font: 400 1.56vw/1.98vw "Averta-Bold";
+    color: #01c5f9;
+    text-transform: uppercase;
+    letter-spacing: -0.05vw;
+    margin-bottom: 1.3vw;
+  }
+  .meet-surgeons .doctor-item h5 {
+    font: 400 1.15vw/1.46vw "Averta-Regular";
+    color: #787878;
+    margin: 0.78vw 0 1.3vw;
+  }
+  .meet-surgeons .doctor-item .cbd-btn-primary {
+    font-size: 0.83vw;
+    min-width: 9.38vw;
+    padding: 0.78vw 1.3vw;
+    font-family: "Averta-Semibold";
+  }
+  .doctor-bio-modal {
+    background: rgba(255, 255, 255, 0.95);
+  }
+  .doctor-bio-modal .modal-dialog {
+    position: absolute;
+    right: 1.04vw;
+    top: -1.04vw;
+    padding: 1.04vw;
+    pointer-events: all;
+  }
+  .doctor-bio-modal .modal-wrapper {
+    background: #fff;
+    border-radius: 0.42vw;
+    width: 62.5vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+    -webkit-box-shadow: 0.1vw 0.94vw 2.03vw #00000012;
+            box-shadow: 0.1vw 0.94vw 2.03vw #00000012;
+    margin: auto;
+    top: 4.17vw;
+    height: calc(100vh - 8.33vw);
+  }
+  .doctor-bio-modal .modal-wrapper .doctor-bio {
+    overflow-y: scroll;
+    padding: 3.13vw 6.25vw 3.13vw 9.64vw;
+    height: 100%;
+    width: 100%;
+  }
+  .doctor-bio-modal .modal-wrapper .doctor-bio h3 {
+    font: 400 1.88vw/2.4vw "Averta-Bold";
+    color: #01c5f9;
+    text-transform: uppercase;
+  }
+  .doctor-bio-modal .modal-wrapper .doctor-bio p {
+    font-size: 0.94vw;
+    line-height: 1.82vw;
+    margin-bottom: 0.26vw;
+  }
+  .doctor-bio-modal .modal-wrapper .doctor-bio hr {
+    margin-top: 2.6vw;
+    margin-bottom: 2.6vw;
+  }
+  .doctor-bio-modal .modal-wrapper .doctor-avatar {
+    border-radius: 0.42vw;
+    overflow: hidden;
+    margin-bottom: 1.3vw;
+    position: absolute;
+    left: -7.03vw;
+    top: 3.13vw;
+  }
+  .doctor-bio-modal .modal-wrapper .doctor-avatar img {
+    width: 14.06vw;
+  }
+  .about-testimonials {
+    padding: 5.21vw 0 5.21vw;
+    background: #fff;
+  }
+  .about-testimonials h2 {
+    margin-bottom: 1.04vw;
+  }
+  .about-testimonials .testimonials-carousel {
+    position: relative;
+  }
+  .about-testimonials .testimonials-carousel .owl-prev {
+    position: absolute;
+    top: 8vw;
+    left: -4.69vw;
+    outline: 0;
+  }
+  .about-testimonials .testimonials-carousel .owl-next {
+    position: absolute;
+    top: 8vw;
+    right: -4.69vw;
+    outline: 0;
+  }
+  .about-testimonials .testimonials-carousel .owl-stage-outer {
+    padding-top: 1.04vw;
+    padding-bottom: 1.04vw;
+  }
+  .about-testimonials .testimonials-carousel .item {
+    padding: 2.6vw 4.69vw 1.56vw 4.69vw;
+    border: 0.1vw solid #01c5f9;
+    font-size: 1.04vw;
+    line-height: 1.88vw;
+    position: relative;
+    overflow: visible;
+  }
+  .about-testimonials .testimonials-carousel .item:before {
+    content: " ";
+    width: 7.97vw;
+    height: 6.82vw;
+    background: url("../images/quote-left.svg") no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: -2.08vw;
+    left: -2.08vw;
+    z-index: 50;
+  }
+  .about-testimonials .testimonials-carousel .item:after {
+    content: " ";
+    width: 7.97vw;
+    height: 6.82vw;
+    background: url("../images/quote-right.svg") no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: -2.08vw;
+    right: -2.08vw;
+    z-index: 50;
+  }
+  .about-testimonials .testimonials-carousel .item h3 {
+    font-size: 1.04vw;
+    line-height: 2.08vw;
+    margin-top: 0;
+    font-weight: bold;
+  }
+  .about-affiliations {
+    padding: 5.21vw 0;
+  }
+  .about-affiliations h2 {
+    margin-bottom: 2.6vw;
+  }
+  .about-affiliations img {
+    max-width: 100%;
+    width: auto;
+    height: 5.21vw;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1919px) {
   .header {
     background: rgba(255, 255, 255, 0.85);
