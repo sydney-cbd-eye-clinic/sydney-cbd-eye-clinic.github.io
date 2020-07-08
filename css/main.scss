@@ -84,11 +84,20 @@ $dark-blue: #015bea;
   background: rgba(#fff, 0.85);
   border-bottom: 1px solid rgba(#707070, 0.15);
   padding: 0 40px;
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
   z-index: 15;
+  transition: all 0.3s;
+  &.narrow {
+    background: rgba(#fff, 0.95);
+
+    .nav-link {
+      padding-top: 25px !important;
+      padding-bottom: 25px !important;
+    }
+  }
   @include tablet {
     position: fixed;
     padding: 30px 20px;
@@ -121,6 +130,8 @@ $dark-blue: #015bea;
       font: 400 18px/24px $font-semibold;
       letter-spacing: -0.7px;
       padding: 37px 20px;
+      transition: all 0.3s;
+
       @include tablet {
         font-size: 22px;
         padding: 20px 0;
@@ -801,5 +812,6 @@ footer {
   }
 }
 @import "about";
+@import "equipment";
 
 @import "responsive";

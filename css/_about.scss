@@ -189,7 +189,7 @@
     position: relative;
     .owl-prev {
       position: absolute;
-      top: 220px;
+      top: 45%;
       left: -90px;
       outline: 0;
       @include tablet {
@@ -198,7 +198,7 @@
     }
     .owl-next {
       position: absolute;
-      top: 220px;
+      top: 45%;
       right: -90px;
       outline: 0;
       @include tablet {
@@ -425,13 +425,11 @@
       position: relative;
       .owl-prev {
         position: absolute;
-        top: 8vw;
         left: -4.69vw;
         outline: 0;
       }
       .owl-next {
         position: absolute;
-        top: 8vw;
         right: -4.69vw;
         outline: 0;
       }

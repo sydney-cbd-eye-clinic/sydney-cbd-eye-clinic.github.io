@@ -111,4 +111,12 @@ $(document).ready(function () {
       })
       .addClass("active");
   });
+
+  $(window).on("scroll", function () {
+    if ($(this).scrollTop() > 100) {
+      $(".header").addClass("narrow");
+    } else {
+      $(".header").removeClass("narrow");
+    }
+  });
 });
