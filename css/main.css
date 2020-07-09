@@ -96,6 +96,10 @@ body {
   }
 }
 
+.header .nav-item {
+  position: relative;
+}
+
 .header .nav-item.active {
   border-bottom: 3px solid #01c5f9;
 }
@@ -106,11 +110,15 @@ body {
   }
 }
 
-.header .nav-item.active .nav-link {
+.header .nav-item.active > .nav-link {
   color: #01c5f9;
 }
 
-.header .nav-item .nav-link {
+.header .nav-item.active > .nav-link svg path {
+  fill: #01c5f9;
+}
+
+.header .nav-item > .nav-link {
   color: #707070;
   font: 400 18px/24px "Averta-Semibold";
   letter-spacing: -0.7px;
@@ -120,20 +128,118 @@ body {
 }
 
 @media (max-width: 991px) {
-  .header .nav-item .nav-link {
+  .header .nav-item > .nav-link {
     font-size: 22px;
     padding: 20px 0;
   }
 }
 
-.header .nav-item .nav-link:hover {
-  border-bottom: 3px solid #ccc;
+@media (max-width: 767px) {
+  .header .nav-item > .nav-link {
+    font-size: 18px;
+    padding: 10px 0;
+  }
+}
+
+.header .nav-item > .nav-link span {
+  position: relative;
+}
+
+.header .nav-item > .nav-link svg {
+  height: 10px;
+  width: 10px;
+  margin-left: 5px;
+}
+
+.header .nav-item > .nav-link svg path {
+  fill: #707070;
+}
+
+.header .nav-item > .nav-link:hover {
   color: #01c5f9;
 }
 
 @media (max-width: 991px) {
-  .header .nav-item .nav-link:hover {
+  .header .nav-item > .nav-link:hover {
     border: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .header .nav-item .sub-menu {
+    border-left: 2px solid #01c5f9;
+  }
+}
+
+.header .nav-item .sub-menu a {
+  display: block;
+  color: #707070;
+  font: 400 18px/40px "Averta-Semibold";
+  padding: 5px 25px;
+}
+
+@media (max-width: 767px) {
+  .header .nav-item .sub-menu a {
+    font: 400 18px/32px "Averta-Semibold";
+  }
+}
+
+.header .nav-item .sub-menu a:hover {
+  color: #01c5f9;
+}
+
+@media (min-width: 768px) {
+  .header .nav-item .sub-menu {
+    padding-left: 0;
+    position: absolute;
+    left: 0;
+    background: #ffffff;
+    list-style: none;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    bottom: 1px;
+    padding: 20px;
+    min-width: 340px;
+    -webkit-transform: translateY(calc(100% + 4px)) scaleY(0);
+            transform: translateY(calc(100% + 4px)) scaleY(0);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -webkit-box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+  }
+  .header .nav-item .sub-menu a {
+    display: block;
+    opacity: 0;
+    color: #707070;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+    font: 400 18px/40px "Averta-Semibold";
+    padding: 5px 25px;
+  }
+  .header .nav-item .sub-menu a:hover {
+    color: #01c5f9;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 992px) and (max-width: 1919px) {
+  .header .nav-item .sub-menu a {
+    font: 400 0.94vw/1.25vw "Averta-Semibold";
+    letter-spacing: -0.04vw;
+    padding: 10px 1vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .header .nav-item.has-children:hover .sub-menu {
+    opacity: 1;
+    -webkit-transform: translateY(calc(100% + 4px)) scaleY(1);
+            transform: translateY(calc(100% + 4px)) scaleY(1);
+  }
+  .header .nav-item.has-children:hover .sub-menu a {
+    opacity: 1;
   }
 }
 
@@ -1807,6 +1913,429 @@ footer .nav-menu .nav-item .nav-link {
   }
 }
 
+.procedure-atf .header {
+  background: #fff !important;
+}
+
+.procedure-header {
+  padding-top: 200px;
+  padding-bottom: 180px;
+  background: url("../images/procedure.svg") no-repeat, linear-gradient(318deg, #015bea 0%, #018df1 47%, #01c5f9 100%) 0% 0% no-repeat padding-box;
+  background-size: auto 100%;
+  background-position: right bottom;
+}
+
+@media (max-width: 767px) {
+  .procedure-header {
+    padding-top: 150px;
+  }
+}
+
+.procedure-header .heading-underline {
+  color: #fff;
+  font-size: 16px;
+}
+
+.procedure-header h1 {
+  margin-top: 40px;
+  font: 400 60px/76px "Averta-Bold";
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .procedure-header h1 {
+    font: 400 32px/46px "Averta-Bold";
+    margin-bottom: 10px;
+  }
+}
+
+.procedure-header p {
+  font: 400 26px/48px "Averta-Regular";
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .procedure-header p {
+    font: 400 20px/36px "Averta-Regular";
+  }
+}
+
+.procedure-details {
+  background: #f8fcff;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 767px) {
+  .procedure-details {
+    padding-bottom: 50px;
+  }
+}
+
+.procedure-details .cbd-card:first-child {
+  position: relative;
+  top: -115px;
+  margin-bottom: -75px;
+}
+
+@media (max-width: 767px) {
+  .procedure-details .cbd-card:first-child {
+    margin-bottom: -95px;
+  }
+}
+
+.cbd-card {
+  padding: 60px;
+  background: #fff;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 3px 50px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 50px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  .cbd-card {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .cbd-card {
+    padding: 30px !important;
+  }
+}
+
+.cbd-card h3 {
+  font: 400 32px/48px "Averta-Bold";
+  color: #015bea;
+  display: inline-block;
+  border-bottom: 3px solid #01c5f9;
+  margin-bottom: 35px;
+}
+
+@media (max-width: 767px) {
+  .cbd-card h3 {
+    font: 400 22px/36px "Averta-Bold";
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.cbd-card .cbd-card-content {
+  font: 400 24px/46px "Lato";
+  max-width: 85%;
+}
+
+@media (max-width: 991px) {
+  .cbd-card .cbd-card-content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .cbd-card .cbd-card-content {
+    font: 400 18px/32px "Lato";
+  }
+}
+
+.cbd-card .cbd-card-content ul {
+  padding-left: 30px;
+  margin-left: 0;
+}
+
+.planning-surgery {
+  padding: 100px 0;
+}
+
+@media (max-width: 767px) {
+  .planning-surgery {
+    padding: 50px 0;
+  }
+}
+
+.faq {
+  padding: 100px 0;
+  background: #f8fcff;
+}
+
+@media (max-width: 767px) {
+  .faq {
+    padding: 50px 0;
+  }
+}
+
+.faq .cbd-card {
+  margin-bottom: 20px;
+  padding: 30px 60px;
+}
+
+.faq .cbd-card h3 {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-right: 50px;
+  display: block;
+  cursor: pointer;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.faq .cbd-card h3:after {
+  content: " ";
+  background: url("../images/up.svg") no-repeat;
+  width: 18px;
+  height: 30px;
+  background-size: contain;
+  position: absolute;
+  right: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  top: 50%;
+}
+
+.faq .cbd-card h3.collapsed {
+  padding-bottom: 0;
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.faq .cbd-card h3.collapsed:after {
+  -webkit-transform: rotate(720deg);
+          transform: rotate(720deg);
+}
+
+.further-question {
+  padding: 150px 0 135px;
+  background: url("../images/further.svg") no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 767px) {
+  .further-question {
+    padding: 80px 0;
+  }
+}
+
+.further-question h2 {
+  font: 400 68px/85px "Averta-Bold";
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .further-question h2 {
+    font: 400 32px/46px "Averta-Bold";
+  }
+}
+
+.further-question h4 {
+  font: 400 38px/58px "Averta-Regular";
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .further-question h4 {
+    font: 400 22px/36px "Averta-Regular";
+  }
+}
+
+.further-question .cbd-btn-secondary {
+  font: 400 28px/38px "Averta-Semibold";
+}
+
+@media (max-width: 767px) {
+  .further-question .cbd-btn-secondary {
+    font: 400 22px/36px "Averta-Semibold";
+  }
+}
+
+.further-question .cbd-btn-secondary img {
+  width: 25px;
+}
+
+@media (max-width: 767px) {
+  .further-question .cbd-btn-secondary img {
+    width: 20px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1919px) {
+  .procedure-header {
+    padding-top: 10.42vw;
+    padding-bottom: 9.38vw;
+  }
+  .procedure-header .heading-underline {
+    font-size: 0.83vw;
+  }
+  .procedure-header h1 {
+    margin-top: 2.08vw;
+    font: 400 3.13vw/3.96vw "Averta-Bold";
+    margin-bottom: 1.04vw;
+  }
+  .procedure-header p {
+    font: 400 1.35vw/2.5vw "Averta-Regular";
+  }
+  .procedure-details {
+    padding-bottom: 5.21vw;
+  }
+  .procedure-details .cbd-card:first-child {
+    top: -5.99vw;
+    margin-bottom: -3.91vw;
+  }
+  .cbd-card {
+    padding: 3.13vw;
+    background: #fff;
+    margin-bottom: 2.08vw;
+  }
+  .cbd-card h3 {
+    font: 400 1.67vw/2.5vw "Averta-Bold";
+    margin-bottom: 1.82vw;
+  }
+  .cbd-card .cbd-card-content {
+    font: 400 1.25vw/2.4vw "Lato";
+  }
+  .cbd-card .cbd-card-content ul {
+    padding-left: 1.56vw;
+  }
+  .planning-surgery {
+    padding: 5.21vw 0;
+  }
+  .faq {
+    padding: 5.21vw 0;
+  }
+  .faq .cbd-card {
+    margin-bottom: 1.04vw;
+    padding: 1.56vw 3.13vw;
+  }
+  .faq .cbd-card h3 {
+    padding-bottom: 1.56vw;
+    margin-bottom: 1.56vw;
+  }
+  .faq .cbd-card h3:after {
+    content: " ";
+    width: 0.94vw;
+    height: 1.56vw;
+  }
+  .further-question {
+    padding: 7.81vw 0 7.03vw;
+  }
+  .further-question h2 {
+    font: 400 3.54vw/4.43vw "Averta-Bold";
+  }
+  .further-question h4 {
+    font: 400 1.98vw/3.02vw "Averta-Regular";
+    margin-bottom: 1.56vw;
+  }
+  .further-question .cbd-btn-secondary {
+    font: 400 1.46vw/1.98vw "Averta-Semibold";
+  }
+  .further-question .cbd-btn-secondary img {
+    width: 1.3vw;
+  }
+}
+
+.contact-atf .header {
+  background: #fff !important;
+}
+
+.contact {
+  padding-top: 130px;
+  background: #f8fcff;
+  padding-bottom: 50px;
+}
+
+.contact p {
+  margin-bottom: 0;
+  font: 400 16px/28px "Lato";
+}
+
+.contact h3 {
+  font: 400 22px/36px "Averta-Semibold";
+  margin-bottom: 0px;
+}
+
+.contact h3 svg {
+  width: 25px;
+  margin-top: -5px;
+  margin-right: 5px;
+}
+
+.contact .contact-card {
+  border-radius: 8px;
+  background: #fff;
+  padding: 30px;
+  -webkit-box-shadow: 0px 3px 50px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 3px 50px rgba(0, 0, 0, 0.07);
+  height: 100%;
+}
+
+.contact .contact-card textarea {
+  height: 24vh;
+}
+
+.contact .contact-card .form-control {
+  padding: 25px 15px;
+}
+
+.contact .contact-card button {
+  outline: 0;
+  border: none;
+  width: 100%;
+  font-family: "Averta-Semibold";
+}
+
+.contact-map {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 991px) {
+  .contact-map iframe {
+    min-height: 500px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1919px) {
+  .contact {
+    padding-top: 6.77vw;
+    padding-bottom: 2.6vw;
+  }
+  .contact p {
+    font: 400 0.83vw/1.46vw "Lato";
+  }
+  .contact h3 {
+    font: 400 1.15vw/1.88vw "Averta-Semibold";
+  }
+  .contact h3 svg {
+    width: 1.3vw;
+    margin-top: -0.26vw;
+    margin-right: 0.26vw;
+  }
+  .contact .contact-card {
+    padding: 1.56vw;
+    margin-bottom: 1.56vw;
+    -webkit-box-shadow: 0px 0.16vw 2.6vw rgba(0, 0, 0, 0.07);
+            box-shadow: 0px 0.16vw 2.6vw rgba(0, 0, 0, 0.07);
+  }
+  .contact .contact-card .form-group {
+    margin-bottom: 0.6vw;
+  }
+  .contact .contact-card .form-control {
+    font-size: 1vw;
+    padding: 1.3vw 0.78vw;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1919px) {
   .header {
     background: rgba(255, 255, 255, 0.85);
@@ -1824,17 +2353,16 @@ footer .nav-menu .nav-item .nav-link {
   .header .nav-item.active {
     border-bottom: 0.16vw solid #01c5f9;
   }
-  .header .nav-item.active .nav-link {
+  .header .nav-item.active > .nav-link {
     color: #01c5f9;
   }
-  .header .nav-item .nav-link {
+  .header .nav-item > .nav-link {
     color: #707070;
     font: 400 0.94vw/1.25vw "Averta-Semibold";
     letter-spacing: -0.04vw;
     padding: 1.93vw 1.04vw;
   }
-  .header .nav-item .nav-link:hover {
-    border-bottom: 0.16vw solid #ccc;
+  .header .nav-item > .nav-link:hover {
     color: #01c5f9;
   }
   .header .header-cta .cta-call {

@@ -7,7 +7,7 @@ $(document).ready(function () {
     boxClass: "wow", // default
     animateClass: "animate__animated", // default
     offset: $(window).innerHeight() * 0.3, // default
-    mobile: true, // default
+    mobile: false, // default
     live: true, // default
   });
   wow.init();
@@ -113,10 +113,12 @@ $(document).ready(function () {
   });
 
   $(window).on("scroll", function () {
-    if ($(this).scrollTop() > 100) {
-      $(".header").addClass("narrow");
-    } else {
-      $(".header").removeClass("narrow");
+    if ($(window).innerWidth() > 767) {
+      if ($(this).scrollTop() > 100) {
+        $(".header").addClass("narrow");
+      } else {
+        $(".header").removeClass("narrow");
+      }
     }
   });
 });

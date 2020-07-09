@@ -1,0 +1,86 @@
+.contact-atf {
+  .header {
+    background: #fff !important;
+  }
+}
+
+.contact {
+  padding-top: 130px;
+  background: #f8fcff;
+  padding-bottom: 50px;
+  p {
+    margin-bottom: 0;
+    font: 400 16px/28px "Lato";
+  }
+  h3 {
+    font: 400 22px/36px $font-semibold;
+    margin-bottom: 0px;
+    svg {
+      width: 25px;
+      margin-top: -5px;
+      margin-right: 5px;
+    }
+  }
+  .contact-card {
+    border-radius: 8px;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0px 3px 50px rgba(0, 0, 0, 0.07);
+    height: 100%;
+    textarea {
+      height: 24vh;
+    }
+    .form-control {
+      padding: 25px 15px;
+    }
+    button {
+      outline: 0;
+      border: none;
+      width: 100%;
+      font-family: $font-semibold;
+    }
+  }
+}
+
+.contact-map {
+  border-radius: 8px;
+  overflow: hidden;
+  iframe {
+    width: 100%;
+    height: 100%;
+    @include tablet {
+      min-height: 500px;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1919px) {
+  .contact {
+    padding-top: 6.77vw;
+    padding-bottom: 2.6vw;
+    p {
+      font: 400 0.83vw/1.46vw "Lato";
+    }
+    h3 {
+      font: 400 1.15vw/1.88vw $font-semibold;
+      svg {
+        width: 1.3vw;
+        margin-top: -0.26vw;
+        margin-right: 0.26vw;
+      }
+    }
+    .contact-card {
+      padding: 1.56vw;
+      margin-bottom: 1.56vw;
+      box-shadow: 0px 0.16vw 2.6vw rgba(0, 0, 0, 0.07);
+      .form-group {
+        margin-bottom: 0.6vw;
+      }
+      .form-control {
+        font-size: 1vw;
+
+        padding: 1.3vw 0.78vw;
+      }
+    }
+  }
+}

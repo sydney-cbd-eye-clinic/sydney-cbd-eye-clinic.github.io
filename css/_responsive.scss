@@ -14,18 +14,16 @@
     .nav-item {
       &.active {
         border-bottom: 0.16vw solid $light-blue;
-        .nav-link {
+        > .nav-link {
           color: $light-blue;
         }
       }
-      .nav-link {
+      > .nav-link {
         color: #707070;
         font: 400 0.94vw/1.25vw $font-semibold;
         letter-spacing: -0.04vw;
         padding: 1.93vw 1.04vw;
         &:hover {
-          border-bottom: 0.16vw solid #ccc;
-
           color: $light-blue;
         }
       }
@@ -487,4 +485,7 @@
   .atf {
     min-height: calc(65.63vw);
   }
+}
+
+@include mobile {
 }

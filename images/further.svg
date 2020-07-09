@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1920px" height="563px" viewBox="96 90 1920 563" enable-background="new 96 90 1920 563" xml:space="preserve">
+<filter  height="755" width="2112" id="_13-2" filterUnits="userSpaceOnUse" y="0" x="0">
+	<feOffset  input="SourceAlpha" dy="6"></feOffset>
+	<feGaussianBlur  result="blur-2" stdDeviation="32"></feGaussianBlur>
+	<feFlood  flood-opacity="0.678" flood-color="#fff"></feFlood>
+	<feComposite  in2="blur-2" operator="in"></feComposite>
+	<feComposite  in="SourceGraphic" operator="over"></feComposite>
+</filter>
+<g id="Group_1" transform="translate(51 180)">
+	<g transform="matrix(1, 0, 0, 1, -51, -180)" filter="url(#_13-2)">
+		
+			<linearGradient id="_13-4_2_" gradientUnits="userSpaceOnUse" x1="256.7297" y1="828.651" x2="256.5738" y2="826.487" gradientTransform="matrix(1920 0 0 -563 -491723.5 466326)">
+			<stop  offset="0" style="stop-color:#00CAFF"/>
+			<stop  offset="1" style="stop-color:#015BEA"/>
+		</linearGradient>
+		<rect id="_13-4_1_" x="96" y="90" fill="url(#_13-4_2_)" width="1920" height="563"/>
+	</g>
+	<g id="Mask_Group_1">
+		
+			<linearGradient id="_1_1_" gradientUnits="userSpaceOnUse" x1="205.7516" y1="647.0698" x2="205.9246" y2="648.8237" gradientTransform="matrix(3211.8601 338.94 87.78 -831.82 -716859.625 469440.7813)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#808080;stop-opacity:0"/>
+		</linearGradient>
+		<path id="_1" opacity="0.38" fill="url(#_1_1_)" enable-background="new    " d="M1004.465,171.051
+			c886.931,93.596,1586.28,355.679,1562.04,585.38c-24.24,229.701-762.889,340.036-1649.82,246.44s-1586.28-355.679-1562.04-585.38
+			C-621.115,187.79,117.534,77.455,1004.465,171.051z"/>
+	</g>
+</g>
+</svg>
