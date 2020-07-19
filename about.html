@@ -25,8 +25,8 @@
 
 
                 <div class="header-cta">
-                    <a href="#" class="cta-call"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20.042"
-                            viewBox="0 0 20 20.042">
+                    <a href="tel:0292336688" class="cta-call"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20.042" viewBox="0 0 20 20.042">
                             <path id="Path_1" data-name="Path 1"
                                 d="M20.015,14.709l-2.8-2.8a1.86,1.86,0,0,0-3.1.7,1.9,1.9,0,0,1-2.2,1.2A8.625,8.625,0,0,1,6.729,8.616a1.81,1.81,0,0,1,1.2-2.2,1.86,1.86,0,0,0,.7-3.1L5.83.524a2,2,0,0,0-2.7,0l-1.9,1.9c-1.9,2,.2,7.292,4.895,11.987S16.119,21.3,18.117,19.3l1.9-1.9A2,2,0,0,0,20.015,14.709Z"
                                 transform="translate(-0.539 0)" fill="#01c5f9" />
@@ -53,44 +53,61 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavId">
                     <ul class="navbar-nav  mt-2 mt-lg-0">
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a class="nav-link" href="/">Home </a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="about">About us</a>
+                            <a class="nav-link" href="/about">About us</a>
+                        </li>
+                        <li class="nav-item has-children">
+                            <a class="nav-link" href="#" id="patient-information" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <span>Patient Information</span> <svg version="1.1" id="Capa_1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    x="0px" y="0px" width="123.959px" height="123.958px" viewBox="0 0 123.959 123.958"
+                                    style="enable-background:new 0 0 123.959 123.958;" xml:space="preserve">
+                                    <path
+                                        d="M117.979,28.017h-112c-5.3,0-8,6.4-4.2,10.2l56,56c2.3,2.3,6.1,2.3,8.401,0l56-56
+                                                                                                                            		C125.979,34.417,123.279,28.017,117.979,28.017z" />
+                                </svg>
+                            </a>
+                            <div class="sub-menu" aria-labelledby="patient-information">
+                                <a href="/attending-your-surgery" ref="#">Attending Your Surgery</a>
+                                <a href="/clinic-consultation" ref="#">Clinic Consultation</a>
+                                <a href="/learning-portal" ref="#">Learning Portal</a>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Patient Information</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="our-equipment-and-technology">Our Equipment & Technology</a>
+                            <a class="nav-link" href="/our-equipment-and-technology">Our Equipment & Technology</a>
                         </li>
                         <li class="nav-item has-children ">
-                            <a class="nav-link  active" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link active" href="/procedures" id="navbarDropdownMenuLink" aria-haspopup="
+                                                true" aria-expanded="false">
                                 <span>Procedures</span> <svg version="1.1" id="Capa_1"
                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     x="0px" y="0px" width="123.959px" height="123.958px" viewBox="0 0 123.959 123.958"
                                     style="enable-background:new 0 0 123.959 123.958;" xml:space="preserve">
                                     <path
                                         d="M117.979,28.017h-112c-5.3,0-8,6.4-4.2,10.2l56,56c2.3,2.3,6.1,2.3,8.401,0l56-56
-                                                                                                		C125.979,34.417,123.279,28.017,117.979,28.017z" />
+                                                                                            		C125.979,34.417,123.279,28.017,117.979,28.017z" />
                                 </svg>
                             </a>
                             <div class="sub-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a href="procedures" ref="#">Oculoplastics</a>
-                                <a href="procedures" ref="#">Cataract surgery</a>
-                                <a href="procedures" ref="#">Glaucoma</a>
-                                <a href="procedures" ref="#">Laser procedures</a>
-                                <a href="procedures" ref="#">LASIK refractive correction</a>
+
+                                <a href="/procedures/lasik">LASIK Vision correction</a>
+                                <a href="/procedures/ptosis">Ptosis (Droopy eyelids)</a>
+                                <a href="/procedures/cataract-surgery">Cataract Surgery</a>
+                                <a href="/procedures/cosmetic-eyelid-surgeries">Cosmetic Eyelid Surgeries</a>
+                                <a href="/procedures/ectropion">Ectropion</a>
+                                <a href="/procedures/entropion">Entropion</a>
+                                <a href="/procedures/glaucoma-and-trabeculectomy">Glaucoma Surgery</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact">Contact us</a>
+                            <a class="nav-link" href="/contact">Contact us</a>
                         </li>
 
                     </ul>
-
 
                 </div>
             </nav>
@@ -98,7 +115,7 @@
         <div class="hero">
             <div class="container">
                 <div class="row d-flex justify-content-between">
-                    <div class="col-lg-6 pr-lg-5">
+                    <div class="col-lg-6 pr-lg-5 wow animate__fadeInLeft">
                         <span class="heading-underline">About Us</span>
                         <h1 class="gradient-text">The CBD Eye Surgery</h1>
                         <p class="about-header-about">The CBD Eye Surgery is a long-standing ophthalmic practice in the
@@ -111,7 +128,7 @@
                             more services throughout our
                             clinic.</p>
                     </div>
-                    <div class="col-lg-6 mt-5 mt-lg-0 pt-5 pt-lg-0 pl-lg-5 pr-sm-5 pr-lg-0">
+                    <div class="col-lg-6 mt-5 mt-lg-0 pt-5 pt-lg-0 pl-lg-5 pr-sm-5 pr-lg-0 wow animate__fadeInRight">
                         <div class="about-atf-img d-flex justify-content-center pr-5 pr-lg-0">
                             <img src="images/about1.png" alt="">
                             <img src="images/about2.png" alt="">
@@ -124,11 +141,11 @@
     </section>
     <section class="meet-surgeons">
         <div class="container">
-            <div class="text-center">
+            <div class="text-center wow animate__fadeIn">
                 <h2 class="gradient-text sec-heading">Meet Our Surgeons</h2>
             </div>
             <div class="row d-flex justify-content-center">
-                <div class="col-sm-6 col-lg-3 doctor-item mb-5 mb-lg-0 pb-sm-5 pb-lg-0">
+                <div class="wow animate__flipInY col-sm-6 col-lg-3 doctor-item mb-5 mb-lg-0 pb-sm-5 pb-lg-0">
                     <div class="doctor-avatar">
                         <img src="images/dr_dennis.jpg" alt="">
                     </div>
@@ -136,7 +153,8 @@
                     <!-- <h5>Designation goes here</h5> -->
                     <a href="#" class="cbd-btn-primary" data-toggle="modal" data-target="#doctor1">Read Bio</a>
                 </div>
-                <div class="col-sm-6 col-lg-3 doctor-item mb-5 mb-lg-0 pb-sm-5 pb-lg-0">
+                <div style="animation-delay:200ms;"
+                    class="wow animate__flipInY col-sm-6 col-lg-3 doctor-item mb-5 mb-lg-0 pb-sm-5 pb-lg-0">
                     <div class="doctor-avatar">
                         <img src="images/Dr_Jason_Cheng_Portrait.jpg" alt="">
                     </div>
@@ -144,7 +162,8 @@
                     <!-- <h5>Designation goes here</h5> -->
                     <a href="#" class="cbd-btn-primary" data-toggle="modal" data-target="#doctor2">Read Bio</a>
                 </div>
-                <div class="col-sm-6 col-lg-3 doctor-item mb-5 mb-lg-0 pb-sm-5 pb-lg-0">
+                <div style="animation-delay:400ms;"
+                    class="wow animate__flipInY col-sm-6 col-lg-3 doctor-item mb-5 mb-lg-0 pb-sm-5 pb-lg-0">
                     <div class="doctor-avatar">
                         <img src="images/Dr_Germaine_Gock.jpg" alt="">
                     </div>
@@ -152,7 +171,8 @@
                     <!-- <h5>Designation goes here</h5> -->
                     <a href="#" class="cbd-btn-primary" data-toggle="modal" data-target="#doctor3">Read Bio</a>
                 </div>
-                <div class="col-sm-6 col-lg-3 doctor-item mb-5 mb-lg-0 pb-sm-5 pb-lg-0">
+                <div style="animation-delay:600ms;"
+                    class="wow animate__flipInY col-sm-6 col-lg-3 doctor-item mb-5 mb-lg-0 pb-sm-5 pb-lg-0">
                     <div class="doctor-avatar">
                         <img src="images/Dr_David_Woo.jpg" alt="">
                     </div>
@@ -165,10 +185,10 @@
     </section>
     <section class="about-testimonials">
         <div class="container">
-            <div class="text-center">
+            <div class="text-center wow animate__fadeIn">
                 <h2 class="gradient-text sec-heading">What Our Patients Say About Us</h2>
             </div>
-            <div class="owl-carousel col-lg-10 mx-auto testimonials-carousel">
+            <div class="owl-carousel wow animate__fadeIn col-lg-10 mx-auto testimonials-carousel">
                 <div class="item text-center">
                     <p>I began seeing Dr Lowe five years ago when I became legally blind through dehydration and renal
                         failure. I only had less
@@ -212,10 +232,10 @@
     </section>
     <section class="about-affiliations">
         <div class="container">
-            <div class="text-center">
-                <h2 class="gradient-text sec-heading">Affiliations</h2>
+            <div class="text-center wow animate__fadeIn">
+                <h2 class="gradient-text sec-heading ">Affiliations</h2>
             </div>
-            <div class="col-lg-10 mx-auto row d-flex justify-content-between align-items-center">
+            <div class="col-lg-10 mx-auto row d-flex justify-content-between align-items-center wow animate__fadeIn">
                 <div class="col-6 col-sm-3 text-center mb-5"><img src="images/affiliations/sight-for-all-logo.svg">
                 </div>
 
@@ -258,101 +278,56 @@
                 <div class="col-md-6 col-lg-2">
                     <ul class="nav-menu list-unstyled">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About us</a>
+                            <a class="nav-link" href="/about">About us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Our Doctors</a>
+                            <a class="nav-link" href="/attending-your-surgery">Attending Your Surgery</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/clinic-consultation" ref="#">Clinic Consultation</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Patient Information</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Our Equipment and Technology</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Procedures</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact us</a>
+                            <a class="nav-link" href="/learning-portal" ref="#">Learning Portal</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-6 col-lg-2">
                     <ul class="nav-menu list-unstyled">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="/our-equipment-and-technology">Our Equipment and Technology</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About us</a>
+                            <a class="nav-link" href="/procedures">Procedures</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Our Doctors</a>
+                            <a class="nav-link" href="/contact">Contact us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Patient Information</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Our Equipment and Technology</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Procedures</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact us</a>
-                        </li>
+
                     </ul>
                 </div>
                 <div class="col-md-6 col-lg-2">
                     <ul class="nav-menu list-unstyled">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                        <li class="nav-item"><a class="nav-link" href="/procedures/lasik">LASIK Vision correction</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About us</a>
+                        <li class="nav-item"><a class="nav-link" href="/procedures/ptosis">Ptosis (Droopy eyelids)</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Our Doctors</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Patient Information</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Our Equipment and Technology</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Procedures</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact us</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="/procedures/cataract-surgery">Cataract
+                                Surgery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/procedures/cosmetic-eyelid-surgeries">Cosmetic
+                                Eyelid Surgeries</a></li>
+
                     </ul>
                 </div>
                 <div class="col-md-6 col-lg-2">
                     <ul class="nav-menu list-unstyled">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Our Doctors</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Patient Information</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Our Equipment and Technology</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Procedures</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact us</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="/procedures/ectropion">Ectropion</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/procedures/entropion">Entropion</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/procedures/glaucoma-and-trabeculectomy">Glaucoma
+                                Surgery</a></li>
                     </ul>
                 </div>
             </div>
@@ -590,6 +565,12 @@
             navText: ['<img src="/images/slider-prev.svg">', '<img src="/images/slider-next.svg">'],
             autoHeight: true,
         })
+        $(window).on('load', function () {
+            let urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('id')) {
+                $('[data-target="#doctor' + urlParams.get('id') + '"]').click();
+            }
+        });
     </script>
 </body>
 

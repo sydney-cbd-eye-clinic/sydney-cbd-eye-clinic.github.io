@@ -12,19 +12,6 @@ $(document).ready(function () {
   });
   wow.init();
 
-  // $.each($(".conditions-treated .condition-item"), function (i) {
-  //   $(this).hover(
-  //     function () {
-  //       console.log(i);
-  //       $(this).css({
-  //         opacity: "0.6 !important",
-  //       });
-  //     },
-  //     function () {
-  //       // $(".conditions-treated .condition-item").css({ opacity: "1" });
-  //     }
-  //   );
-  // });
 
   $(".conditions-treated .condition-item").hover(
     function () {
