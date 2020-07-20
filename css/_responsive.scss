@@ -257,6 +257,27 @@
 
 	.home-book-form {
 		padding: 5.21vw 0;
+		p {
+			font: 400 1.25vw/1.88vw 'Lato';
+		}
+		img {
+			border-radius: 0.42vw;
+			top: -10.42vw;
+			margin-bottom: -10.42vw;
+		}
+		.cbd-btn-primary {
+			padding-left: 1.04vw;
+			font-size: 1.04vw;
+			padding-top: 0.78vw;
+			padding-bottom: 0.78vw;
+			letter-spacing: 0.05vw;
+			padding-right: 1.04vw;
+		}
+		.btn-call {
+			margin-top: 1.04vw;
+			font: 400 1.25vw/1.56vw $font-regular;
+			margin-left: 1.04vw;
+		}
 	}
 
 	.home-why-choose {

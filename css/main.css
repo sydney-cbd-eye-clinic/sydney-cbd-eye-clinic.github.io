@@ -688,6 +688,55 @@ body {
   padding: 100px 0;
 }
 
+.home-book-form p {
+  font: 400 24px/36px 'Lato';
+}
+
+@media (max-width: 767px) {
+  .home-book-form p {
+    font: 400 18px/28px 'Lato';
+  }
+}
+
+.home-book-form img {
+  border-radius: 8px;
+  position: relative;
+  top: -200px;
+  margin-bottom: -200px;
+}
+
+@media (max-width: 991px) {
+  .home-book-form img {
+    position: static;
+    margin-bottom: 0;
+    margin-top: 40px;
+  }
+}
+
+.home-book-form .cbd-btn-primary {
+  padding-left: 20px;
+  font-size: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  letter-spacing: 1px;
+  padding-right: 20px;
+}
+
+@media (max-width: 767px) {
+  .home-book-form .cbd-btn-primary {
+    font-size: 16px;
+  }
+}
+
+.home-book-form .btn-call {
+  margin-top: 20px;
+  display: inline-block;
+  font: 400 24px/30px "Averta-Regular";
+  letter-spacing: 0;
+  color: #01c5f9;
+  margin-left: 20px;
+}
+
 .home-why-choose {
   background: #f9f9f9;
   padding: 100px 0 60px;
@@ -2991,6 +3040,27 @@ footer .nav-menu .nav-item .nav-link {
   }
   .home-book-form {
     padding: 5.21vw 0;
+  }
+  .home-book-form p {
+    font: 400 1.25vw/1.88vw 'Lato';
+  }
+  .home-book-form img {
+    border-radius: 0.42vw;
+    top: -10.42vw;
+    margin-bottom: -10.42vw;
+  }
+  .home-book-form .cbd-btn-primary {
+    padding-left: 1.04vw;
+    font-size: 1.04vw;
+    padding-top: 0.78vw;
+    padding-bottom: 0.78vw;
+    letter-spacing: 0.05vw;
+    padding-right: 1.04vw;
+  }
+  .home-book-form .btn-call {
+    margin-top: 1.04vw;
+    font: 400 1.25vw/1.56vw "Averta-Regular";
+    margin-left: 1.04vw;
   }
   .home-why-choose {
     background: #f9f9f9;
