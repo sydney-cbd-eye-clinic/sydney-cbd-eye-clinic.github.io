@@ -169,6 +169,7 @@ $dark-blue: #015bea;
 		}
 
 		.sub-menu {
+			z-index: 1000;
 			@include mobile {
 				border-left: 2px solid $light-blue;
 			}

@@ -167,6 +167,10 @@ body {
   }
 }
 
+.header .nav-item .sub-menu {
+  z-index: 1000;
+}
+
 @media (max-width: 767px) {
   .header .nav-item .sub-menu {
     border-left: 2px solid #01c5f9;
