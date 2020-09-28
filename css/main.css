@@ -512,7 +512,7 @@ footer .nav-menu .nav-item .nav-link { font: 400 16px/26px "Averta-Regular"; let
 
 .about-affiliations h2 { margin-bottom: 50px; }
 
-.about-affiliations img { max-width: 100%; width: auto; height: 100px; }
+.about-affiliations img { max-width: 100%; width: auto; height: auto; }
 
 @media (min-width: 992px) and (max-width: 1919px) { .about-us-atf { min-height: unset !important; padding-top: 13.54vw; padding-bottom: 8.33vw; }
   .about-us-atf .hero { padding-top: 0; }
@@ -547,7 +547,7 @@ footer .nav-menu .nav-item .nav-link { font: 400 16px/26px "Averta-Regular"; let
   .about-testimonials .testimonials-carousel .item h3 { font-size: 1.04vw; line-height: 2.08vw; margin-top: 0; font-weight: bold; }
   .about-affiliations { padding: 5.21vw 0; }
   .about-affiliations h2 { margin-bottom: 2.6vw; }
-  .about-affiliations img { max-width: 100%; width: auto; height: 5.21vw; } }
+  .about-affiliations img { max-width: 100%; width: auto; height: auto; } }
 
 .equipment-atf { min-height: unset !important; }
 
