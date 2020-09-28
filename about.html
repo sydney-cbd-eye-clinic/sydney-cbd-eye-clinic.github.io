@@ -163,81 +163,13 @@
           >
         </div>
       </section>
-      <!-- <section class="about-testimonials">
-        <div class="container">
-            <div class="text-center wow animate__fadeIn">
-                <h2 class="gradient-text sec-heading">What Our Patients Say About Us</h2>
-            </div>
-            <div class="owl-carousel wow animate__fadeIn col-lg-10 mx-auto testimonials-carousel">
-                <div class="item text-center">
-                    <p>I began seeing Dr Lowe five years ago when I became legally blind through dehydration and renal
-                        failure. I only had less
-                        than 10% field of vision in my right eye and total loss in my left eye. Other opthamologists had
-                        told me there was
-                        nothing to be done. One of the opthamologists told me about Dr Lowe. After 6 months I had
-                        regained color and definition
-                        in my remaining vision. How do you thank someone for bringing colour back to your world? I can't
-                        recommend Dr Lowe and
-                        his team enough
-                    </p>
-                    <h3>Melissa W</h3>
-                </div>
-                <div class="item text-center">
-                    <p>I visited Dr Dennis Lowe for a pterygium operation. He was the third specialist I had visited and
-                        this was the second
-                        operation I had had, so I knew what to expect. Or thought I did. The prompt service (never kept
-                        waiting for more than 20
-                        minutes), the efficiency and thoroughness of the staff was better than I have experienced in any
-                        medical facility. As
-                        too, was the knowledge and expertise of all of the staff I had contact with. Clearly this is a
-                        place which sets very
-                        high standards and the staff take a true interest in their work. I found this review website
-                        whilst google searching for
-                        an address to send my thank you card to.
-                    </p>
-                    <h3>Karen T</h3>
 
-                </div>
-                <div class="item text-center">
-                    <p>
-                        Very pleasant and intelligent doctors who actually listen to you and don't just prescribe
-                        something to get you out the
-                        door. And the receptionists are friendly and helpful
-                    </p>
-                    <h3>Bert P</h3>
-
-                </div>
-            </div>
-        </div>
-    </section> -->
       <section class="about-affiliations">
         <div class="container">
           <div class="text-center wow animate__fadeIn">
             <h2 class="gradient-text sec-heading">Affiliations</h2>
           </div>
-          <!-- <div class="col-lg-10 mx-auto row d-flex justify-content-between align-items-center wow animate__fadeIn">
-                <div class="col-6 col-sm-3 text-center mb-5"><img src="images/affiliations/sight-for-all-logo.svg">
-                </div>
 
-                <div class="col-6 col-sm-3 text-center mb-5"><img src="images/affiliations/SightFoundation.png"></div>
-
-                <div class="col-6 col-sm-3 text-center mb-5"><img src="images/affiliations/SydneyEy Hospital.png">
-                </div>
-
-                <div class="col-6 col-sm-3 text-center mb-5"><img
-                        src="images/affiliations/the-university-of-sydney-vector-logo.png">
-                </div>
-
-                <div class="col-6 col-sm-3 text-center mb-5"><img src="images/affiliations/AHHA+logo+website.png">
-                </div>
-
-                <div class="col-6 col-sm-3 text-center mb-5"><img src="images/affiliations/logo-svphs-130.png"></div>
-
-                <div class="col-6 col-sm-3 text-center mb-5"><img src="images/affiliations/POWH.jpg"></div>
-
-                <div class="col-6 col-sm-3 text-center mb-5"><img src="images/affiliations/RANZCO.jpg"></div>
-
-            </div> -->
           <div
             class="col-lg-10 mx-auto row d-flex justify-content-center align-items-center wow animate__fadeIn"
           >
@@ -564,25 +496,5 @@
     <script src="js/owl.carousel.js"></script>
 
     <script src="js/main.js"></script>
-    <script>
-      $(".owl-carousel").owlCarousel({
-        loop: true,
-        margin: 50,
-        nav: true,
-        items: 1,
-        dots: false,
-        navText: [
-          '<img src="/images/slider-prev.svg">',
-          '<img src="/images/slider-next.svg">',
-        ],
-        autoHeight: true,
-      });
-      $(window).on("load", function () {
-        let urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.get("id")) {
-          $('[data-target="#doctor' + urlParams.get("id") + '"]').click();
-        }
-      });
-    </script>
   </body>
 </html>
