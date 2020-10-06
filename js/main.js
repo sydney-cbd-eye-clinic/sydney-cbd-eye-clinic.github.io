@@ -2,7 +2,7 @@ Vue.component("nav-bar", {
   template: `
   <nav class="navbar navbar-expand-lg w-100">
                     <a class="navbar-brand" href="/">
-                        <img src="/images/logo.svg" alt="Sydney CBD Eye Clinic">
+                        <img src="/images/logo-min.png" alt="Sydney CBD Eye Clinic">
                     </a>
 
 
@@ -54,8 +54,10 @@ Vue.component("nav-bar", {
                                                                                             		C125.979,34.417,123.279,28.017,117.979,28.017z" />
                                     </svg>
                                 </a>
+                                
                                 <div class="sub-menu" aria-labelledby="navbarDropdownMenuLink">
-
+                                <a href="/about.html">Our Practice</a>
+                                <a href="/about.html#doctors">Our Doctors</a>
                                     <a href="/our-equipment-and-technology.html">Our Equipments & Technologies</a>
 
                                 </div>
@@ -101,11 +103,12 @@ Vue.component("nav-bar", {
 
                                     <a href="/procedures/cataract-surgery">Cataract Surgery</a>
                                     <a href="/procedures/glaucoma-and-trabeculectomy">Glaucoma Surgery</a>
-                                    <a href="/procedures/cosmetic-eyelid-surgeries">Oculoplastics</a>
-                                    <a href="/procedures/ectropion">Entropion</a>
-                                    <a href="/procedures/ptosis">Ptosis (Droopy eyelids)</a>
+                                    <a href="/procedures/cosmetic-eyelid-surgeries">Cosmetic Eyelid Surgery</a>
+                                    <a href="/procedures/entropion">Entropion</a>
+                                    <a href="/procedures/ectropion">Ectropion</a>
+                                    <a href="/procedures/ptosis">Ptosis Repair</a>
                                     <a href="/procedures/lasik">LASIK Vision correction</a>
-                                    <a href="/procedures/entropion">Botox Injections</a>
+                                    <a href="/procedures/botox">Botox Injections</a>
                                 </div>
                             </li>
                             <li class="nav-item">
@@ -158,10 +161,10 @@ Vue.component("footer-dynamic", {
                                 </h5>
                                 <ul class="nav-menu list-unstyled">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/our-equipment-and-technology">The Practice</a>
+                                        <a class="nav-link" href="/about.html">The Practice</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/procedures">Our Doctors</a>
+                                        <a class="nav-link" href="/about.html#doctors">Our Doctors</a>
                                     </li>
 
 
@@ -216,7 +219,7 @@ Vue.component("footer-dynamic", {
                                 </h5>
                                 <div class="footer-contact">
                                     <p>Level 1, 82 Elizabeth St, Sydney NSW 2000</p>
-                                    <p>info@sydneycbd.com.au</p>
+                                    <p>info@cbdeyeclinic.com.au</p>
                                     <p><a href="tel:0292336688"> 02 9233 6688</a></p>
                                 </div>
                             </div>
