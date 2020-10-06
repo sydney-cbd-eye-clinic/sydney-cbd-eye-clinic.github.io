@@ -64,30 +64,6 @@ $font-regular: "Averta-Regular";
 $font-semibold: "Averta-Semibold";
 $font-bold: "Averta-Bold";
 
-@media (min-width: 1200px) and (max-width: 1920px) {
-  .navbar {
-    .navbar-brand {
-      img {
-        max-width:15.63vw;
-      }}}
-  .container {
-    max-width: 73%;
-    width: 73%;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .navbar {
-    .navbar-brand {
-      img {
-        max-width: 110px;
-      }}}
-  .container {
-    max-width: 90%;
-    width: 90%;
-  }
-}
-
-
 $light-blue: #01c5f9;
 $dark-blue: #015bea;
 
@@ -122,13 +98,10 @@ $dark-blue: #015bea;
   .navbar {
     .navbar-brand {
       img {
-        max-width:300px;
-       @include mobile {
-         max-width: 20.63vw;
-       }
-       @include tablet {
-         max-width: 20.63vw;
-       }
+        max-width: 300px;
+        @include tablet {
+          max-width: 150px;
+        }
       }
     }
     padding: 0;
