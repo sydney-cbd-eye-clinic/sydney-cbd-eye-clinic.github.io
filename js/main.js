@@ -104,9 +104,8 @@ Vue.component("nav-bar", {
                                     <a href="/procedures/cataract-surgery">Cataract Surgery</a>
                                     <a href="/procedures/glaucoma-and-trabeculectomy">Glaucoma Surgery</a>
                                     <a href="/procedures/cosmetic-eyelid-surgeries">Cosmetic Eyelid Surgery</a>
-                                    <a href="/procedures/entropion">Entropion</a>
-                                    <a href="/procedures/ectropion">Ectropion</a>
-                                    <a href="/procedures/ptosis">Ptosis Repair</a>
+                                    <a href="/procedures/#oculoplastic-surgery">Oculoplastic Surgery</a>
+                                    <a href="/procedures/">Injections for AMD and Diabetes</a>
                                     <a href="/procedures/lasik">LASIK Vision correction</a>
                                     <a href="/procedures/botox">Botox Injections</a>
                                 </div>
