@@ -54,7 +54,7 @@ Vue.component("nav-bar", {
                                                                                             		C125.979,34.417,123.279,28.017,117.979,28.017z" />
                                     </svg>
                                 </a>
-                                
+
                                 <div class="sub-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a href="/about.html">Our Practice</a>
                                 <a href="/about.html#doctors">Our Doctors</a>
@@ -125,9 +125,9 @@ Vue.component("footer-dynamic", {
             <div class="container-fluid px-lg-5">
                 <div class="row">
                     <div class="col-lg-3">
-                        <a href="/"><img class="footer-logo" src="../images/footer-logo.svg" alt=""></a> 
+                        <a href="/"><img class="footer-logo" src="../images/footer-logo.svg" alt=""></a>
                         <p class="mt-3  pr-4">Sydney CBD Eye clinic was founded by Dr Dennis Lowe – an experienced Ophthalmic surgeon and neurologist with a vision to provide access to exceptional eye care with a holistic approach.
-                        </p>                   
+                        </p>
                     </div>
                     <div class="col-lg-9">
                         <div class="row">
@@ -174,11 +174,11 @@ Vue.component("footer-dynamic", {
                                     PROCEDURES
                                 </h5>
                                 <ul class="nav-menu list-unstyled">
-                                    <li class="nav-item"><a class="nav-link" href="/procedures/cataract-surgery.html">Catracat
-                                            surgery</a>
+                                    <li class="nav-item"><a class="nav-link" href="/procedures/cataract-surgery.html">Cataract
+                                            Surgery</a>
                                     </li>
                                     <li class="nav-item"><a class="nav-link" href="/procedures/glaucoma-and-trabeculectomy.html">Glaucoma
-                                            surgery</a>
+                                            Surgery</a>
                                     </li>
                                     <li class="nav-item"><a class="nav-link"
                                             href="#">Migraine Botox injection</a></li>
@@ -228,8 +228,8 @@ Vue.component("footer-dynamic", {
                 <div class="footer-copyright">
                         <p>Copyright © 2020 Sydney CBD Eye Clinic. All rights reserved.</p>
                     </div>
-                        </div>  
-                        
+                        </div>
+
         </footer>
   `,
 });
